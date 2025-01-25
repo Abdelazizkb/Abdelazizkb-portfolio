@@ -11,5 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "simple-tailwind-starter": "file:"
   }
 }

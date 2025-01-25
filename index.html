@@ -8,7 +8,298 @@
     <title>Simple Tailwind Starter</title>
   </head>
   <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+    <div class="absolute top-0 z-0 h-[1100px] w-full overflow-hidden">
+      <img
+        class="w-full"
+        src="./assets/images/bg-hero-section.png"
+        alt="bg-hero-section"
+      />
+    </div>
+
+    <header
+      class="container-xs mx-auto relative h-[120px] flex w-full items-center z-10"
+    >
+      <nav class="mx-auto">
+        <ul class="flex items-center gap-[10px]">
+          <li class="list-none bg-white p-4">
+            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
+          </li>
+          <li class="list-none bg-white p-4">
+            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
+          </li>
+          <li class="list-none bg-white p-4">
+            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
+          </li>
+          <li class="list-none bg-white p-4">
+            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="relative container max-w-[90%] mx-auto flex flex-col gap-16 mt-16"
+    >
+      <section class="mx-auto flex flex-col items-center gap-16">
+        <div class="flex flex-col items-start gap-6">
+          <div class="flex flex-col items-start gap-[6px]">
+            <p class="text-secondary text-base font-semibold">Hi I am</p>
+            <p class="text-secondary text-2xl font-semibold">KORBA Abdelaziz</p>
+            <p class="text-primary text-4xl font-bold">Software Engineer</p>
+          </div>
+          <div>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p class="text-secondary">Tristique amet sed massa nibh lectus</p>
+            <p class="text-secondary">netus in. Aliquet donec morbi</p>
+          </div>
+          <div class="flex items-center">
+            <button
+              class="w-fit h-fit text-white text-sm leading-none bg-primary px-[25px] py-[15px] rounded-[30px]"
+            >
+              Check my services
+            </button>
+            <button
+              class="flex items-center gap-2 text-secondary text-sm font-medium leading-none px-6 rounded-[30px]"
+            >
+              <img src="./assets/icons/calendly.png" alt="arrow-right" />
+
+              Calendly
+            </button>
+          </div>
+        </div>
+        <img src="./assets/images/abdelaziz.png" alt="abdelaziz" />
+        <div
+          class="max-w-[95%] bg-white p-6 flex flex-col gap-6 rounded-2xl shadow-md"
+        >
+          <div class="max-w-[326px] flex flex-col gap-[6px]">
+            <p class="text-2xl text-secondary font-medium">
+              Full-stack developer & Software Engineer.
+            </p>
+            <p class="text-secondary-light break-normal">
+              I specialize in UI/UX & Graphic Design and my passion is all about
+              building elegant and professional user interfaces and websites
+            </p>
+          </div>
+          <div class="w-full flex flex-col items-center gap-4">
+            <button
+              class="w-fit h- flex items-center gap-3 text-white text-lg leading-none bg-primary px-[30px] py-[20px] rounded-[40px]"
+            >
+              Request Quotation
+              <img src="./assets/icons/arrow-right.png" alt="arrow-right" />
+            </button>
+            <button
+              class="w-fit h-16 flex items-center gap-3 text-secondary font-semibold text-lg leading-none px-[30px] rounded-[40px]"
+            >
+              <img src="./assets/icons/download.png" alt="download" />
+              Download Resume
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- section : profile ******************************************* -->
+      <section class="flex flex-col gap-6">
+        <!-- subsection : education ######################################## -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-4">
+            <svg
+              width="32"
+              height="3"
+              viewBox="0 0 32 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="0.648193" width="32" height="2" fill="#357EF5" />
+            </svg>
+            <p class="text-primary text-lg font-semibold">EDUCATION</p>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <div class="flex flex-col gap-1">
+              <div
+                class="flex items-center text-primary text-sm font-medium gap-2"
+              >
+                <p>2020 - 2022</p>
+                <strong class="leading-none">|</strong>
+                <p>Constantine, Algeria</p>
+              </div>
+              <p class="text-xl font-semibold text-secondary">
+                Master in Information Systems
+              </p>
+            </div>
+
+            <p class="text-secondary-light">
+              Master degree in Information Systems Technologies,University
+              Abdelhamid Mehri Constantine 2
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <div class="flex flex-col gap-1">
+              <div
+                class="flex items-center text-primary text-sm font-medium gap-2"
+              >
+                <p>2017 - 2020</p>
+                <strong class="leading-none">|</strong>
+                <p>Constantine, Algeria</p>
+              </div>
+              <p class="text-xl font-semibold text-secondary">
+                License in Information Systems
+              </p>
+            </div>
+
+            <p class="text-secondary-light">
+              License degree in Information Systems Technologies,University
+              Abdelhamid Mehri Constantine 2
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <div class="flex flex-col gap-1">
+              <div
+                class="flex items-center text-primary text-sm font-medium gap-2"
+              >
+                <p>2014 - 2017</p>
+                <strong class="leading-none">|</strong>
+                <p>Bouira, Algeria</p>
+              </div>
+              <p class="text-xl font-semibold text-secondary">Baccalaureate</p>
+            </div>
+
+            <p class="text-secondary-light">
+              Algerian Baccalaureate Series Experimental Sciences
+            </p>
+          </div>
+        </div>
+
+        <!-- subsection : work history ######################################## -->
+
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-4">
+            <svg
+              width="32"
+              height="3"
+              viewBox="0 0 32 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="0.648193" width="32" height="2" fill="#A855F7" />
+            </svg>
+            <p class="text-purple-primary text-lg font-semibold">
+              WORK HISTORY
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <div class="flex flex-col gap-1">
+              <div
+                class="flex items-center text-purple-primary text-sm font-medium gap-2"
+              >
+                <p>2024 - 2025</p>
+                <strong class="leading-none">|</strong>
+                <p>Beesiha</p>
+              </div>
+              <p class="text-xl font-semibold text-secondary">
+                Full-Stack Web Developer
+              </p>
+            </div>
+
+            <p class="text-secondary-light">
+              Collaborate with creative and development teams on the development
+              of new version of Beesiha's website, enhancing functionality, user
+              experience.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <div class="flex flex-col gap-1">
+              <div
+                class="flex items-center text-purple-primary text-sm font-medium gap-2"
+              >
+                <p>2023</p>
+                <strong class="leading-none">|</strong>
+                <p>CreaTech</p>
+              </div>
+              <p class="text-xl font-semibold text-secondary">
+                Front-End Developer
+              </p>
+            </div>
+
+            <p class="text-secondary-light">
+              Collaborate with creative team on the development of new web
+              application
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <div class="flex flex-col gap-1">
+              <div
+                class="flex items-center text-purple-primary text-sm font-medium gap-2"
+              >
+                <p>2022 - 2024</p>
+                <strong class="leading-none">|</strong>
+                <p>Tesymo</p>
+              </div>
+              <p class="text-xl font-semibold text-secondary">
+                Front-End Developer
+              </p>
+            </div>
+
+            <p class="text-secondary-light">
+              Collaborate with creative team on the development of a Complete
+              Enterprise Resource Planning SAAS
+            </p>
+          </div>
+        </div>
+
+        <!-- subsection : skills ######################################## -->
+
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-4">
+            <svg
+              width="32"
+              height="3"
+              viewBox="0 0 32 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="0.648193" width="32" height="2" fill="#2DB24A" />
+            </svg>
+            <p class="text-[#2DB24A] text-lg font-semibold">TOOLS I USE</p>
+          </div>
+
+          <div class="grid grid-cols-3 grid-rows-3 gap-4">
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
+              1
+            </div>
+          </div>
+        </div>
+      </section>
+      test
+    </main>
   </body>
 </html>

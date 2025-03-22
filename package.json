@@ -4,16 +4,32 @@
   "description": "Simple file structure for Tailwind projects",
   "main": "index.js",
   "scripts": {
-    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
-    "build": "tailwindcss -i ./input.css -o ./css/style.css"
+    "minify-html": "html-minifier-terser src/index.html --collapse-whitespace --output=dist/index.html",
+    "transpile-js": "babel src/script.js -o dist/script.js --presets=@babel/preset-env",
+    "minify-js": "uglifyjs dist/script.js --compress -o dist/script.js",
+    "copy-assets": "copyfiles -u 2 \"src/assets/**/*\" dist/assets/",
+    "copy-css": "copyfiles -u 2 \"src/css/**/*\" dist/css/",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/css/style.css --minify --watch",
+    "open": "npx live-server src",
+    "dev": "npm run open && npm run watch",
+    "minify-css": "tailwindcss -i ./src/css/style.css -o ./dist/css/style.css --minify",
+    "build": "npm run minify-html && npm run transpile-js && npm run minify-js && npm run copy-assets && npm run copy-css && npm run minify-css"
   },
   "author": "Brad Traversy",
   "license": "MIT",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.2",
+    "open": "^10.1.0",
     "tailwindcss": "^3.2.7"
   },
   "dependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
     "@splidejs/splide": "^4.1.4",
-    "simple-tailwind-starter": "file:"
+    "html-minifier-terser": "^7.2.0",
+    "simple-tailwind-starter": "file:",
+    "uglify-js": "^3.19.3"
   }
 }

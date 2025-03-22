@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Simple Tailwind Starter</title>
+    <title>Abdelaziz korba</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <div class="absolute top-0 z-0 h-[1100px] w-full overflow-hidden">
@@ -17,88 +22,93 @@
     </div>
 
     <header
-      class="container-xs mx-auto relative h-[120px] flex w-full items-center z-10"
+      class="container-xs mx-auto relative h-[120px] w-full flex items-center z-10"
     >
-      <nav class="mx-auto">
-        <ul class="flex items-center gap-[10px]">
-          <li class="list-none bg-white p-4">
-            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
-          </li>
-          <li class="list-none bg-white p-4">
-            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
-          </li>
-          <li class="list-none bg-white p-4">
-            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
-          </li>
-          <li class="list-none bg-white p-4">
-            <img src="./assets/icons/facebook.png" alt="facebook-icon" />
-          </li>
-        </ul>
+      <nav class="px-6 mx-auto w-full flex items-center justify-between">
+        <img src="./assets/icons/small-logo.png" alt="logo-icon" />
+        <button class="w-8 h-8">
+          <img class="w-8 h-8" src="./assets/icons/menu.png" alt="logo-icon" />
+        </button>
       </nav>
     </header>
-    <main
-      class="relative container max-w-[90%] mx-auto flex flex-col gap-16 mt-16"
-    >
+    <main class="relative flex flex-col gap-16 mt-16">
       <section class="mx-auto flex flex-col items-center gap-16">
-        <div class="flex flex-col items-start gap-6">
-          <div class="flex flex-col items-start gap-[6px]">
-            <p class="text-secondary text-base font-semibold">Hi I am</p>
-            <p class="text-secondary text-2xl font-semibold">KORBA Abdelaziz</p>
-            <p class="text-primary text-4xl font-bold">Software Engineer</p>
+        <div class="flex flex-col items-center gap-6">
+          <div class="flex flex-col items-center gap-[6px]">
+            <div class="flex flex-col items-center gap-[2px]">
+              <p class="text-secondary text-base font-semibold">Hi I am</p>
+              <p class="text-secondary text-2xl font-bold">KORBA Abdelaziz</p>
+            </div>
+            <p class="text-primary text-4xl font-extrabold">
+              Software Engineer
+            </p>
           </div>
-          <div>
+          <!--           <div>
             <p class="text-secondary">
               Lorem ipsum dolor sit amet consectetur.
             </p>
             <p class="text-secondary">Tristique amet sed massa nibh lectus</p>
             <p class="text-secondary">netus in. Aliquet donec morbi</p>
+          </div> -->
+          <div class="flex flex-col items-center">
+            <p class="text-secondary">Experienced Software Engineer</p>
+            <p class="text-secondary">
+              Proficient in front-end and backend development
+            </p>
+            <p class="text-secondary">
+              Scalable APIs and friendly user experience
+            </p>
           </div>
           <div class="flex items-center">
-            <button
-              class="w-fit h-fit text-white text-sm leading-none bg-primary px-[25px] py-[15px] rounded-[30px]"
+            <a
+            href="https://calendly.com/korbaabdo/30min"
+            target="_blank" rel="noopener"
+              class="flex items-center gap-3 text-white text-md font-medium leading-none bg-primary pl-12 pr-9 py-4 rounded-[40px]"
             >
-              Check my services
-            </button>
-            <button
-              class="flex items-center gap-2 text-secondary text-sm font-medium leading-none px-6 rounded-[30px]"
-            >
-              <img src="./assets/icons/calendly.png" alt="arrow-right" />
+              Book a Meeting
+              <img src="./assets/icons/arrow-right.png" alt="arrow-right" />
+          </a>
 
-              Calendly
-            </button>
           </div>
         </div>
         <img src="./assets/images/abdelaziz.png" alt="abdelaziz" />
         <div
-          class="max-w-[95%] bg-white p-6 flex flex-col gap-6 rounded-2xl shadow-md"
+          class="w-[90%] max-w-[440px] bg-white p-6 flex flex-col gap-6 rounded-2xl shadow-md"
         >
-          <div class="max-w-[326px] flex flex-col gap-[6px]">
+          <div class="max-w-[326px] flex flex-col gap-[8px]">
             <p class="text-2xl text-secondary font-medium">
               Full-stack developer & Software Engineer.
             </p>
             <p class="text-secondary-light break-normal">
-              I specialize in UI/UX & Graphic Design and my passion is all about
-              building elegant and professional user interfaces and websites
+              Software Engineer. Proficient in modern front-end technologies, as
+              well as robust backend solutions...
             </p>
           </div>
           <div class="w-full flex flex-col items-center gap-4">
-            <button
+            <a
+            href="https://calendly.com/korbaabdo/30min"
+            target="_blank" rel="noopener"
               class="w-fit h- flex items-center gap-3 text-white text-lg leading-none bg-primary px-[30px] py-[20px] rounded-[40px]"
             >
               Request Quotation
               <img src="./assets/icons/arrow-right.png" alt="arrow-right" />
-            </button>
-            <button
+           </a>
+            <a
+            href="https://abdelaziz-korba-resume.tiiny.site"
+            target="_blank" rel="noopener"
               class="w-fit h-16 flex items-center gap-3 text-secondary font-semibold text-lg leading-none px-[30px] rounded-[40px]"
             >
               <img src="./assets/icons/download.png" alt="download" />
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
       </section>
       <!-- section : profile ******************************************* -->
-      <section class="flex flex-col gap-6">
+      <section
+        id="profile"
+        class="w-[90%] max-w-[440px] mx-auto flex flex-col gap-6"
+      >
         <!-- subsection : education ######################################## -->
         <div class="flex flex-col gap-6">
           <div class="flex items-center gap-4">
@@ -111,13 +121,13 @@
             >
               <rect y="0.648193" width="32" height="2" fill="#357EF5" />
             </svg>
-            <p class="text-primary text-lg font-semibold">EDUCATION</p>
+            <p class="text-[#3B82F6] text-lg font-semibold">EDUCATION</p>
           </div>
 
           <div class="flex flex-col gap-[10px]">
             <div class="flex flex-col gap-1">
               <div
-                class="flex items-center text-primary text-sm font-medium gap-2"
+                class="flex items-center text-[#3B82F6] text-sm font-medium gap-2"
               >
                 <p>2020 - 2022</p>
                 <strong class="leading-none">|</strong>
@@ -137,7 +147,7 @@
           <div class="flex flex-col gap-[10px]">
             <div class="flex flex-col gap-1">
               <div
-                class="flex items-center text-primary text-sm font-medium gap-2"
+                class="flex items-center text-[#3B82F6] text-sm font-medium gap-2"
               >
                 <p>2017 - 2020</p>
                 <strong class="leading-none">|</strong>
@@ -157,7 +167,7 @@
           <div class="flex flex-col gap-[10px]">
             <div class="flex flex-col gap-1">
               <div
-                class="flex items-center text-primary text-sm font-medium gap-2"
+                class="flex items-center text-[#3B82F6] text-sm font-medium gap-2"
               >
                 <p>2014 - 2017</p>
                 <strong class="leading-none">|</strong>
@@ -268,38 +278,327 @@
             <p class="text-[#2DB24A] text-lg font-semibold">TOOLS I USE</p>
           </div>
 
-          <div class="grid grid-cols-3 grid-rows-3 gap-4">
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
+          <div
+            id="technologies-list"
+            class="grid grid-cols-3 grid-rows-3 gap-4"
+          ></div>
+        </div>
+      </section>
+
+      <!-- section : services ******************************************* -->
+
+      <section
+        id="services"
+        class="max-w-full h-full pb-5 overflow-hidden mx-auto flex flex-col items-center gap-12"
+      >
+        <div class="flex flex-col items-center gap-6">
+          <p class="text-secondary font-bold text-5xl">Services</p>
+          <p class="text-secondary-light text-xl break-normal text-center">
+            I offer a variety of interesting services for your business
+          </p>
+        </div>
+        <div class="featured stacked-cards">
+          <ul class="slider">
+          <li class="item">
+            <img
+              src="./assets/images/uiux.png"
+              alt="services-design"
+            />
+            <div class="flex flex-col gap-2 px-5 py-2">
+              <p class="font-medium text-2xl text-primary">Ui-UX Design</p>
+              <p class="text-[15px] text-secondary-light">Bring or make your own design, Unique Brand Identity, Optimized for Conversion...</p>
             </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
+          </li>
+          <li class="item">
+            <img
+              src="./assets/images/webdev.png"
+              alt="services-design"
+            />
+            <div class="flex flex-col gap-2 px-5 py-2">
+              <p class="font-medium text-2xl text-primary">Create your own website</p>
+              <p class="text-[15px] text-secondary-light">I'm here to offer you comprehensive web development services tailored to your Business</p>
             </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
+          </li>
+          <li class="item">
+            <img
+              src="./assets/images/thirdparty.png"
+              alt="services-design"
+            />
+            <div class="flex flex-col gap-2 px-5 py-2">
+              <p class="font-medium text-2xl text-primary">Third Party integration</p>
+              <p class="text-[15px] text-secondary-light">Supercharge your web app by seamlessly integrating with popular platforms</p>
             </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
-            </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
-            </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
-            </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
-            </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
-            </div>
-            <div class="bg-white text-secondary w-[100px] h-[100px] shadow-md">
-              1
+          </li>
+        </ul>
+        </div>
+       <!--  <div class="flex flex-col gap-6">
+          <div
+            class="flex flex-col gap-6 pt-[54px] pb-[42px] pl-[18px] pr-[13px] bg-[#F8F8F8] rounded-2xl"
+          >
+            <img
+              class="w-[70px] h-[70px]"
+              src="./assets/images/services-design.png"
+              alt="services-design"
+            />
+            <p class="text-secondary text-[32px] font-bold">UI/UX</p>
+
+            <p class="text-secondary-light text-lg">
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 pt-[54px] pb-[42px] pl-[18px] pr-[13px] bg-[#F8F8F8] rounded-2xl"
+          >
+            <img
+              class="w-[70px] h-[70px]"
+              src="./assets/images/services-design.png"
+              alt="services-design"
+            />
+            <p class="text-secondary text-[32px] font-bold">UI/UX</p>
+
+            <p class="text-secondary-light text-lg">
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 pt-[54px] pb-[42px] pl-[18px] pr-[13px] bg-[#F8F8F8] rounded-2xl"
+          >
+            <img
+              class="w-[70px] h-[70px]"
+              src="./assets/images/services-design.png"
+              alt="services-design"
+            />
+            <p class="text-secondary text-[32px] font-bold">UI/UX</p>
+
+            <p class="text-secondary-light text-lg">
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-6 pt-[54px] pb-[42px] pl-[18px] pr-[13px] bg-[#F8F8F8] rounded-2xl"
+          >
+            <img
+              class="w-[70px] h-[70px]"
+              src="./assets/images/services-design.png"
+              alt="services-design"
+            />
+            <p class="text-secondary text-[32px] font-bold">UI/UX</p>
+
+            <p class="text-secondary-light text-lg">
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- section : projects ******************************************* -->
+
+      <section id="projects" class="flex flex-col items-center gap-12">
+        <div
+          class="w-[90%] max-w-[440px] mx-auto flex flex-col items-center gap-6"
+        >
+          <div class="mx-auto flex flex-col items-center gap-4">
+            <p class="text-secondary font-bold text-5xl">My Projects</p>
+            <p class="text-secondary-light text-xl break-normal text-center">
+              Lorem ipsum dolor sit amet <br />
+              consectetur. Tristique
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <div class="flex justify-center gap-4 over">
+              <div
+                class="filter-btn px-4 h-[26px] bg-primary border-[0.2px] text-white text-xs flex items-center justify-center rounded-md"
+                data-filter="all"
+              >
+                All
+              </div>
+              <button
+                class="filter-btn px-4 h-[26px] bg-light text-secondary border-[0.2px] text-xs flex items-center justify-center rounded-md"
+                data-filter="UI-UX"
+              >
+                Front-End
+              </button>
+              <button
+                class="filter-btn px-4 h-[26px] bg-light text-secondary border-[0.2px] text-xs flex items-center justify-center rounded-md"
+                data-filter="BACKEND"
+              >
+                Back-End
+              </button>
+              <button
+                class="filter-btn px-4 h-[26px] bg-light text-secondary border-[0.2px] text-xs flex items-center justify-center rounded-md"
+                data-filter="FRONTEND"
+              >
+                Web Design
+              </button>
             </div>
           </div>
         </div>
+
+        <div
+          class="splide w-full mx-auto"
+          role="group"
+          aria-label="Splide Basic HTML Example"
+        >
+          <div class="splide__track">
+            <ul class="splide__list" id="projects-list">
+              <!-- <li class="splide__slide">
+                <div class="flex flex-col gap-7">
+                  <img
+                    class="w-[335px] h-[365px]"
+                    src="./assets/images/project-4.png"
+                    alt="services-design"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-2">
+                    <p class="text-sm text-secondary">Web Design</p>
+                    <p class="font-bold text-secondary">
+                      Modulux 3D Modeling Plateform
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-col gap-7">
+                  <img
+                    class="w-[335px] h-[365px]"
+                    src="./assets/images/project-5.png"
+                    alt="services-design"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-2">
+                    <p class="text-sm text-secondary">Web Design</p>
+                    <p class="font-bold text-secondary">
+                      Modulux 3D Modeling Plateform
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-col gap-7">
+                  <img
+                    class="w-[335px] h-[365px]"
+                    src="./assets/images/project-3.png"
+                    alt="services-design"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-2">
+                    <p class="text-sm text-secondary">Web Design</p>
+                    <p class="font-bold text-secondary">
+                      Modulux 3D Modeling Plateform
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-col gap-7">
+                  <img
+                    class="w-[335px] h-[365px]"
+                    src="./assets/images/project-2.png"
+                    alt="services-design"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-2">
+                    <p class="text-sm text-secondary">Web Design</p>
+                    <p class="font-bold text-secondary">
+                      Modulux 3D Modeling Plateform
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-col gap-7">
+                  <img
+                    class="w-[335px] h-[365px]"
+                    src="./assets/images/project-1.png"
+                    alt="services-design"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-2">
+                    <p class="text-sm text-secondary">Web Design</p>
+                    <p class="font-bold text-secondary">
+                      Modulux 3D Modeling Plateform
+                    </p>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
       </section>
-      test
+
+      <!-- section : CTA ******************************************* -->
+
+      <section
+        id="CTA"
+        class="w-screen flex flex-col items-center gap-16 py-16"
+        style="
+          background-image: url('assets/images/cta.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <p class="text-secondary text-2xl font-bold">
+          Get in touch and let's chat!
+        </p>
+        <div class="flex flex-col items-center gap-9">
+          <a href="mailto:korba.abdelaziz@gmail.com"  class="flex flex-col items-center gap-4  hover:underline active:underline active:font-bold">
+            <img class="w-10 h-10" src="./assets/icons/email.png" alt="email" />
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-secondary-light">Email Address</p>
+              <p class="text-secondary font-medium text-xl">
+                korba.abdelaziz@gmail.com
+              </p>
+            </div>
+          </a>
+          <a href="https://wa.me/213550335950" target="_blank" rel="noopener" class="flex flex-col items-center gap-4  hover:underline active:underline active:font-bold">
+            <img class="w-10 h-10" src="./assets/icons/phone.png" alt="email" />
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-secondary-light">Phone Number</p>
+              <p class="text-secondary font-medium text-xl">
+                (213) 550 335 950
+              </p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/abdelaziz-korba" target="_blank" rel="noopener" class="flex flex-col items-center gap-4">
+            <img
+              class="w-10 h-10"
+              src="./assets/icons/linkedin.png"
+              alt="email"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-secondary-light">Available on LinkedIn</p>
+              <p class="text-secondary font-medium text-xl">
+                linkedin/abdelaziz-korba
+              </p>
+            </div>
+          </a>
+        </div>
+        <a
+        href="https://calendly.com/korbaabdo/30min"
+            target="_blank" rel="noopener"
+          class="w-fit h- flex items-center gap-3 text-white text-lg leading-none bg-primary px-[30px] py-[20px] rounded-[40px]"
+        >
+          Request Quotation
+          <img src="./assets/icons/arrow-right.png" alt="arrow-right" />
+      </a>
+      </section>
     </main>
+    <footer class="h-20 flex items-center justify-center">
+      <p class="text-xs text-secondary-light text-center max-w-[95%] leading-5">
+        All Content © 2025-Current All right reserved Abdelaziz Korba.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

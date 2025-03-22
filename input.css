@@ -7,3 +7,77 @@
     font-family: "Poppins", system-ui, sans-serif;
   }
 }
+
+.featured {
+  align-self: center;
+  .slider {
+    list-style: none;
+    padding: 0;
+  }
+  .slider li {
+    height: 400px;
+    width: 360px;
+    border-radius: 16px;
+    background-color: white;
+    padding: 3px;
+    h2 {
+      margin-top: auto;
+      background: #fff;
+      width: 100%;
+      padding: 20px 20px;
+      display: block;
+      bottom: 0;
+    }
+  }
+}
+
+/* STACKED CARDS */
+.stacked-cards {
+  position: relative;
+}
+.stacked-cards ul {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.stacked-cards li {
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0px #d3d3d3;
+  list-style: none;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  transition: 0.5s ease transform;
+}
+
+.stacked-cards li:after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.stacked-cards li img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 4;
+}
+.stacked-cards li.active {
+  cursor: default;
+  box-shadow: 0 5px 10px 0px #d3d3d3;
+  transition: 0.5s ease transform;
+}
+
+.splide .splide__arrow {
+  display: none;
+}
+
+.splide .splide__pagination {
+  display: none;
+}

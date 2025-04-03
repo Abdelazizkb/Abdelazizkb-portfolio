@@ -9,7 +9,7 @@
     "minify-js": "uglifyjs dist/script.js --compress -o dist/script.js",
     "copy-assets": "copyfiles -u 2 \"src/assets/**/*\" dist/assets/",
     "copy-css": "copyfiles -u 2 \"src/css/**/*\" dist/css/",
-    "watch": "tailwindcss -i ./src/input.css -o ./src/css/style.css --minify --watch",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/css/style.css --watch",
     "open": "npx live-server src",
     "dev": "npm run open && npm run watch",
     "minify-css": "tailwindcss -i ./src/css/style.css -o ./dist/css/style.css --minify",

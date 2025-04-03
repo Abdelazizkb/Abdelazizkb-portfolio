@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: "Poppins", system-ui, sans-serif;
-  }
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .featured {
@@ -20,13 +18,8 @@
     border-radius: 16px;
     background-color: white;
     padding: 3px;
-    h2 {
-      margin-top: auto;
-      background: #fff;
-      width: 100%;
-      padding: 20px 20px;
-      display: block;
-      bottom: 0;
+    .large {
+      display: none;
     }
   }
 }
@@ -80,4 +73,34 @@
 
 .splide .splide__pagination {
   display: none;
+}
+
+.splide__slide {
+  margin: 20px;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .featured {
+    width: 100vw;
+
+    .slider li {
+      .small {
+        display: none;
+      }
+      .large {
+        display: block;
+      }
+    }
+  }
+  .featured {
+    width: 100vw;
+    .slider {
+      width: 50vw;
+    }
+    .slider li {
+      height: 475px;
+      width: 691px;
+    }
+  }
 }

@@ -1,4 +1,12 @@
 // Array of technologies with logos and names
+const SocialMedia = [
+  { name: "LinkedIn", svg: "./assets/icons/reactjs.png" },
+  { name: "Github", logo: "./assets/icons/typescript.png" },
+  { name: "Whatsapp", logo: "./assets/icons/python.png" },
+  { name: "X", logo: "./assets/icons/Django.png" },
+];
+
+// Array of technologies with logos and names
 const technologies = [
   { name: "React", logo: "./assets/icons/reactjs.png" },
   { name: "Typescript", logo: "./assets/icons/typescript.png" },
@@ -53,47 +61,49 @@ const projects = [
   {
     title: "Business Landing Page Design",
     category: "BACKEND",
-    description: "A modern landing page for business growth.",
+    description: "Back-End Development",
     image: "./assets/images/project-5.png",
   },
   {
     title: "Mobile App UI",
     category: "FRONTEND",
-    description: "A sleek mobile app interface.",
+    description: "Front-End Development",
     image: "./assets/images/project-4.png",
   },
   {
     title: "E-commerce Website",
     category: "BACKEND",
-    description: "An e-commerce platform with a great user experience.",
+    description: "Back-End Development",
     image: "./assets/images/project-2.png",
   },
   {
     title: "Branding and Logo Design",
     category: "UI-UX",
-    description: "A complete branding package for a startup.",
+    description: "Web design",
     image: "./assets/images/project-3.png",
   },
   {
     title: "Dashboard UI",
     category: "UI-UX",
-    description: "A user-friendly dashboard interface.",
+    description: "Web design",
     image: "./assets/images/project-1.png",
   },
   {
     title: "Social Media Graphics",
     category: "FRONTEND",
-    description: "Engaging graphics for social media campaigns.",
+    description: "Front-End Development",
     image: "./assets/images/project-5.png",
   },
 ];
 
 const projectsList = document.getElementById("projects-list");
+const largeProjectsList = document.getElementById("large-projects-list");
 
 // Function to display projects
 function displayProjects(filter = "all") {
   // Clear the grid and carousel
   projectsList.innerHTML = "";
+  largeProjectsList.innerHTML = "";
 
   // Filter projects based on the selected category
   const filteredProjects =
@@ -104,32 +114,35 @@ function displayProjects(filter = "all") {
   // Create project cards and append them to the grid and carousel
   filteredProjects.forEach((project) => {
     const projectCard = document.createElement("li");
-    projectCard.classList.add("splide__slide");
 
     projectCard.innerHTML = `
-      <div class="flex flex-col gap-7">
-        <img
-          class="w-[335px] h-[365px]"
-          src="${project.image}" alt="${project.title}"
-          alt="services-design"
-          alt=""
-        />
-        <div class="flex flex-col gap-2">
-          <p class="text-sm text-secondary">${project.description}</p>
-            <p class="font-bold text-secondary">
-            ${project.title}
-            </p>
+      <div class="h-[500px] flex flex-col" style="gap:16px;">
+        <div class="w-[335px] h-[365px] lg:w-[445px] lg:h-[489px]">
+          <img
+            src="${project.image}" alt="${project.title}"
+            alt="services-design"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col" style="gap:10px;">
+          <p class="text-sm text-primary">${project.description}</p>
+          <p class="font-semibold text-lg text-secondary">${project.title}</p>
         </div>
       </div>
     `;
+
     // Append to grid (desktop)
+    const gridItemLarge = projectCard.cloneNode(true);
+    largeProjectsList.appendChild(gridItemLarge);
+
+    // Append to grid (mobile)
+    projectCard.classList.add("splide__slide");
     const gridItem = projectCard.cloneNode(true);
     projectsList.appendChild(gridItem);
   });
 
   new Splide(".splide", {
     autoWidth: true,
-    type: "loop",
     perPage: 3,
     focus: "center",
     autoplay: true,
@@ -371,7 +384,7 @@ displayProjects();
             rotateNextStart = rotateNextStart + (nextCnt * 10) / nextCnt;
             break;
           default:
-            translateX = (50 - prevDivisor * 2 * i) * -1;
+            translateX = (100 - prevDivisor * 2 * i) * -1;
             rotate = "rotate(0deg)";
         }
 

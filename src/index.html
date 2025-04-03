@@ -32,22 +32,24 @@
     <header
       class="w-[90%] max-w-[440px] lg:max-w-lg mx-auto relative h-[120px] flex items-center z-10"
     >
-      <nav class="px-6 mx-auto w-full flex items-center justify-between">
+      <nav
+        class="px-6 lg:px-0 mx-auto w-full flex items-center justify-between"
+      >
         <ul class="hidden lg:flex items-center gap-[20px]">
           <li class="text-sm font-medium text-[#1F2937] hover:text-primary">
             <a href="">Home</a>
           </li>
           <li class="text-sm font-medium text-[#1F2937] hover:text-primary">
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="text-sm font-medium text-[#1F2937] hover:text-primary">
-            <a href="">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li class="text-sm font-medium text-[#1F2937] hover:text-primary">
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li class="text-sm font-medium text-[#1F2937] hover:text-primary">
-            <a href="">Contact</a>
+            <a href="#contact-us">Contact us</a>
           </li>
         </ul>
 
@@ -106,11 +108,9 @@
         </ul>
       </nav>
     </header>
-    <main
-      class="lg:max-w-lg mx-auto relative flex flex-col gap-16 mt-16 lg:mt-[124px]"
-    >
+    <main class="relative flex flex-col gap-16 mt-16 lg:mt-[124px]">
       <section
-        class="lg:container mx-auto flex flex-col items-center gap-16 lg:gap-[124px]"
+        class="lg:max-w-lg mx-auto flex flex-col items-center gap-16 lg:gap-[124px]"
       >
         <div
           class="flex flex-col lg:w-full lg:flex-row lg:justify-between items-center gap-16"
@@ -167,12 +167,12 @@
           </div>
           <img
             class="lg:hidden"
-            src="./assets/images/abdelaziz.png"
+            src="./assets/images/abdelaziz-sm.png"
             alt="abdelaziz"
           />
           <img
             class="hidden lg:inline-block"
-            src="./assets/images/abdelaziz-lg.png"
+            src="./assets/images/abdelaziz-xl.png"
             alt="abdelaziz"
           />
         </div>
@@ -242,8 +242,8 @@
         </div>
       </section>
       <!-- section : profile ******************************************* -->
+      <div id="about"></div>
       <section
-        id="profile"
         class="w-[90%] max-w-[440px] lg:w-fit lg:max-w-lg mx-auto flex flex-col lg:flex-row gap-16"
       >
         <!-- subsection : education ######################################## -->
@@ -423,9 +423,9 @@
       </section>
 
       <!-- section : services ******************************************* -->
+      <div id="services"></div>
 
       <section
-        id="services"
         class="max-w-full h-full pb-5 overflow-hidden mx-auto flex flex-col items-center gap-12 lg:pb-10"
       >
         <div class="flex flex-col items-center gap-6">
@@ -510,16 +510,19 @@
       </section>
 
       <!-- section : projects ******************************************* -->
-
-      <section id="projects" class="flex flex-col items-center gap-12">
+      <div id="projects"></div>
+      <section
+        id="projects"
+        class="w-full lg:max-w-lg mx-auto flex flex-col items-center gap-12"
+      >
         <div
           class="w-[90%] max-w-[440px] mx-auto flex flex-col items-center gap-6"
         >
           <div class="mx-auto flex flex-col items-center gap-4">
             <p class="text-secondary font-bold text-5xl">My Projects</p>
             <p class="text-secondary-light text-xl break-normal text-center">
-              Lorem ipsum dolor sit amet <br />
-              consectetur. Tristique
+              Creative and functional web solutions <br />
+              built with precision and innovation.
             </p>
           </div>
 
@@ -578,9 +581,9 @@
       </section>
 
       <!-- section : CTA ******************************************* -->
+      <div id="contact-us"></div>
 
       <section
-        id="CTA"
         class="w-screen flex flex-col items-center gap-16 lg:gap-24 py-16 lg:py-[164px]"
         style="
           background-image: url('assets/images/cta.png');

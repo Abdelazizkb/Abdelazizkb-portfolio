@@ -144,6 +144,7 @@ function displayProjects(filter = "all") {
   new Splide(".splide", {
     autoWidth: true,
     perPage: 3,
+    type: "loop",
     focus: "center",
     autoplay: true,
     interval: 8000,

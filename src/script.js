@@ -59,40 +59,35 @@ technologies.forEach((tech) => {
 // Array of projects
 const projects = [
   {
-    title: "Business Landing Page Design",
+    title: "EasyCarnvan vehicle rentals platform",
     category: "BACKEND",
     description: "Back-End Development",
     image: "./assets/images/project-5.png",
+    url: "https://carnvan-website-production.up.railway.app/",
   },
   {
-    title: "Mobile App UI",
-    category: "FRONTEND",
-    description: "Front-End Development",
+    title: "Modulux 3D modeling platform",
+    category: "all",
+    description: "Full-Stack Development",
     image: "./assets/images/project-4.png",
   },
   {
-    title: "E-commerce Website",
-    category: "BACKEND",
-    description: "Back-End Development",
+    title: "Cars rental dashboard",
+    category: "UI-UX",
+    description: "Web Design",
     image: "./assets/images/project-2.png",
   },
   {
-    title: "Branding and Logo Design",
-    category: "UI-UX",
-    description: "Web design",
+    title: "Win Solution DZ",
+    category: "FRONTEND",
+    description: "Front-End Development",
     image: "./assets/images/project-3.png",
   },
   {
-    title: "Dashboard UI",
-    category: "UI-UX",
-    description: "Web design",
-    image: "./assets/images/project-1.png",
-  },
-  {
-    title: "Social Media Graphics",
+    title: "WinSolutionDZ management Dash",
     category: "FRONTEND",
     description: "Front-End Development",
-    image: "./assets/images/project-5.png",
+    image: "./assets/images/project-1.png",
   },
 ];
 

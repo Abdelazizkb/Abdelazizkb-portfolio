@@ -11,10 +11,10 @@ const technologies = [
   { name: "React", logo: "./assets/icons/reactjs.png" },
   { name: "Typescript", logo: "./assets/icons/typescript.png" },
   { name: "Python", logo: "./assets/icons/python.png" },
-  { name: "Django", logo: "./assets/icons/Django.png" },
 
   { name: "Next", logo: "./assets/icons/nextjs.png" },
-  { name: "Redux", logo: "./assets/icons/redux.png" },
+  { name: "NestJS", logo: "./assets/icons/nest.png" },
+  { name: "Django", logo: "./assets/icons/Django.png" },
 
   { name: "TailwindCSS", logo: "./assets/icons/tailwindcss.png" },
   { name: "Sass", logo: "./assets/icons/sass.png" },
